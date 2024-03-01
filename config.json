@@ -1,7 +1,8 @@
 {
     "colors": {
-        "primary": "#06378a",
-        "second": "#1d5cc6",
+        "primary": "#6D00FF",
+        "second": "#06378a",
+        "third": "#061124",
         "disable": "#0d2650"
     },
 

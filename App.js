@@ -6,7 +6,7 @@ import Routes from "./src/routes"
 
 const App = () => {
     return (
-        <Routes />
+        <Routes/>
     );
 }
 
@@ -15,7 +15,7 @@ export default App;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#111',
+        backgroundColor: '#111111',
         alignItems: 'center',
         justifyContent: 'center',
     },

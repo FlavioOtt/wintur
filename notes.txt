@@ -1,0 +1,34 @@
+import { Picker } from "@react-native-picker/picker";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+import api from "../../api";
+
+const config = require("../../config.json");
+
+<View>
+    <Image style={styles.img} source={require("../assets/RHtrans.png")} />
+
+    <Text >{config.company.name}</Text>
+</View>
+
+<View >
+    <Picker
+        selectedValue={cargo}
+        style={{color: "#fff"}}
+        onValueChange={(itemValue, _) => setCargo(itemValue)}
+    >
+        <Picker.Item label="Administrador" value="administrador" />
+        <Picker.Item label="Colaborador" value="colab" />
+        <Picker.Item label="Sócio" value="socio" />
+    </Picker>
+</View>
+
+<TextInput
+    placeholder="senha"
+    secureTextEntry={true}
+    onChangeText={text => setSenha(text)}
+/>
+
+<TouchableOpacity onPress={ () => setLogin() } >
+    <Text >Entrar</Text>
+</TouchableOpacity>
